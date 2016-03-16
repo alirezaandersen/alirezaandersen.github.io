@@ -2,8 +2,26 @@
 layout: default
 ---
 
-{% for post in site.posts %}
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <h4>{{ post.date | date: "%m-%d-%Y" }}</h4>
-  <p>{{ post.content | strip_html | truncatewords:10}}</p>
-{% endfor %}
+<h4><p> Welcome to my site! So a little about me on how I became the myth, the legend, the man,
+  It all started in 1980 born in a revolution that we had to flee traveled to Italy
+  From there we came to the USA were I've been raised. I grew up in California where I
+    learned the values of Family and Friends who without them today I would not be the myth, the legend,
+    the man. <br><br> Checkout the links above to get to know about me. </p></h4>
+
+{% assign count = 0 %}
+<table>
+  {% for post in site.posts %}
+  <tr>
+    <td>
+      {% if count == 0 %}
+        {{ post.content }}
+      {% else %}
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h4>{{ post.date | date: "%m-%d-%Y" }}</h4>
+      <p>{{ post.content | strip_html | truncatewords:50}}</p>
+      {% endif %}
+    </td>
+  </tr>
+  {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+  {% endfor %}
+</table>
