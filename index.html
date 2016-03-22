@@ -8,13 +8,18 @@ layout: default
     learned the values of Family and Friends who without them today I would not be the myth, the legend,
     the man. <br><br> Checkout the links above to get to know more about me. </p></h4>
 
+
 {% assign count = 0 %}
 <table>
   {% for post in site.posts %}
   <tr>
     <td>
+      <div class='container'>
+        <div class='row well'>
       {% if count == 0 %}
         {{ post.content }}
+      </div>
+    </div>
       {% else %}
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <h4>{{ post.date | date: "%m-%d-%Y" }}</h4>
