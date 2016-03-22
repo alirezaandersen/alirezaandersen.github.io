@@ -3,11 +3,17 @@
   height: 500px;
   float: left;
 }
+
 #ziba_ali {
   height: 500px;
   float: left;
-
 }
+
+#dogposter_syndrom {
+  width: 500px;
+  float: left;
+}
+
 #ziba_gets_dirty {
   height: 500px;
   float: right;
@@ -18,13 +24,14 @@
   font-style: oblique;
   color: rgb(5, 23, 173);;
 }
+
 #flyingman{
   height: 400px;
   width: 280px;
 }
+
 #sleepingman{
   height: 400px;
-
 }
 
 #vertical_pics{
