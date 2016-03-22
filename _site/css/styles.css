@@ -49,6 +49,15 @@
   padding-left: 15px;
 }
 
+.top-spacing{
+  margin-top:5%;
+}
+
+.navbar-default {
+    background-color: #9ECBF3;
+    border-color: #E7E7E7;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
